@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">InStatistic</string>
+
+    <!-- FirstStepFragment - BEGIN -->
+
+    <string name="first_magnitude_1">Magnitude 1:</string>
+    <string name="first_magnitude_2">Magnitude 2:</string>
+    <string name="first_number_of_samples">Number of samples...</string>
+
+    <string name="first_magnitude_1_name">Name of magnitude 1...</string>
+    <string name="first_magnitude_2_name">Name of magnitude 2...</string>
+
+    <string name="first_which_magnitude_will_be_fixed">Which magnitude will be measured?</string>
+    <string name="first_magnitude_1_">Magnitude 1</string>
+    <string name="first_magnitude_2_">Magnitude 2</string>
+
+    <string name="first_insert_fixed_samples">Insert fixed samples ></string>
+    <string name="first_number_of_samples_greater_than_max">The number of samples should be between 4 and 25.</string>
+    <string name="first_invalid_name">You need to choose a name for each magnitude.</string>
+
+    <string name="first_measurement_equip_uncertainty">Uncertainty of measure equipment:</string>
+    <string name="first_measurement_equip_offset">offset</string>
+    <string name="first_measurement_equip_percent">%</string>
+    <string name="first_measurement_equip_var">var</string>
+
+    <string name="first_constant_uncertainty">Constant (u = offset)</string>
+    <string name="first_scale_uncertainty">Scale dependent (var = full scale)</string>
+    <string name="first_measured_uncertainty">Measure dependent (var = measured value)</string>
+    <string name="first_measurement_equip_uncertainty_type">Tipo de incerteza do equipamento:</string>
+    <string name="first_invalid_uncertainty_values">Invalid uncertainty values</string>
+    <!-- FirstStepFragment - END -->
+
+
+    <!--SecondStepFragment - BEGIN-->
+
+    <string name="second_insert_next_sample_set">Analyse and continue ></string>
+    <string name="second_samples_of">Samples of</string>
+
+    <string name="second_put_fixed_values">Fill in with fixed values:</string>
+    <string name="second_you_need_all_samples">You need to indicate all samples.</string>
+    <!--SecondStepFragment - END-->
+
+    <!--ThirdStepFragment - BEGIN-->
+    <string name="third_put_measured_values">Fill in with measured values:</string>
+    <string name="third_analyse">Analyse</string>
+    <string name="third_invalid_value">Invalid value, try again.</string>
+    <string name="third_chauvenet_invalid_samples">According to the rejection criterion, the red samples are invalid and it will influence the calculations.</string>
+    <string name="third_chauvenet_no_correlation">The measured magnitudes are not linearly correlated.</string>
+    <!--ThirdStepFragment - END-->
+
+    <!--FinalStepFragment - BEGIN-->
+    <string name="final_correlation_coefficient">Correlation coefficient:</string>
+    <string name="final_new">New analysis</string>
+    <string name="final_log">Save report</string>
+    <string name="final_strong_correlation">Strong correlation</string>
+    <string name="final_no_correlation">No linear correlation</string>
+    <string name="final_regression_eq">Linear Regression Equation:</string>
+    <!--FinalStepFragment - END-->
+
+
+
+    <!-- AboutDialog - Begin /-->
+    <string name="about_title">About</string>
+    <string name="about_description">
+        <Data><![CDATA[
+        <p>The <i>InStatistic</i> is a tool that does linear correlation analysis between two
+         magnitudes, where one was measured and the another has known values.
+         The measured samples are treated according to Chauvenet Rejection Criterion. This project
+         was developed during Instrumentation course in Electrical Engineering degree at IFPB.</p>
+        <p>Leader:</p>
+        - Prof. Ademar Gonçalves da Costa Junior<br/>
+        <p>Student:</p>
+        - Felipe Porge Xavier (Android Dev)<br/>
+        ]]> </Data>
+    </string>
+    <!-- AboutDialog - End /-->
+</resources>

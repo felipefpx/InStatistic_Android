@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.bitmine.sttool.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_magnitude_1"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_magnitude_1_name"
+            android:id="@+id/first_magnitude_1"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:background="@drawable/white_off_shape"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_number_of_samples"
+            android:id="@+id/first_number_of_samples_mg1"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:background="@drawable/white_off_shape"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_measurement_equip_uncertainty"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="u = (+/-) "
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_measurement_equip_offset"
+                android:id="@+id/first_measurement_equip_offset_1"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:ems="5"
+                android:inputType="numberSigned|numberDecimal"
+                android:background="@drawable/white_off_shape"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:ems="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_measurement_equip_percent"
+                android:id="@+id/first_measurement_equip_percent_1"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="numberSigned|numberDecimal"
+                android:background="@drawable/white_off_shape"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" * "
+                android:layout_marginTop="7dp"/>
+
+            <EditText
+                android:ems="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_measurement_equip_var"
+                android:id="@+id/first_measurement_equip_var_1"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="numberSigned|numberDecimal"
+                android:background="@drawable/white_off_shape"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_measurement_equip_uncertainty_type"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/first_uncertainty_type_1"
+            android:checkedButton="@+id/first_type_scale_dp_1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_scale_uncertainty"
+                android:textColor="@color/gray"
+                android:id="@+id/first_type_scale_dp_1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_measured_uncertainty"
+                android:textColor="@color/gray"
+                android:id="@+id/first_type_measurement_dp_1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_constant_uncertainty"
+                android:textColor="@color/gray"
+                android:id="@+id/first_type_constant_1"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_magnitude_2"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_magnitude_2_name"
+            android:id="@+id/first_magnitude_2"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:background="@drawable/white_off_shape"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_number_of_samples"
+            android:id="@+id/first_number_of_samples_mg2"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:background="@drawable/white_off_shape"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_measurement_equip_uncertainty"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="u = (+/-) "
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_measurement_equip_offset"
+                android:id="@+id/first_measurement_equip_offset_2"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:ems="5"
+                android:inputType="numberSigned|numberDecimal"
+                android:background="@drawable/white_off_shape"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:ems="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_measurement_equip_percent"
+                android:id="@+id/first_measurement_equip_percent_2"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="numberSigned|numberDecimal"
+                android:background="@drawable/white_off_shape"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" * "
+                android:layout_marginTop="7dp"/>
+
+            <EditText
+                android:ems="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_measurement_equip_var"
+                android:id="@+id/first_measurement_equip_var_2"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="numberSigned|numberDecimal"
+                android:background="@drawable/white_off_shape"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_measurement_equip_uncertainty_type"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/first_uncertainty_type_2"
+            android:checkedButton="@+id/first_type_scale_dp_2">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_scale_uncertainty"
+                android:textColor="@color/gray"
+                android:id="@+id/first_type_scale_dp_2"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_measured_uncertainty"
+                android:textColor="@color/gray"
+                android:id="@+id/first_type_measurement_dp_2"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_constant_uncertainty"
+                android:textColor="@color/gray"
+                android:id="@+id/first_type_constant_2"/>
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_which_magnitude_will_be_fixed" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:checkedButton="@+id/first_measured_magnitude_1"
+            android:id="@+id/first_fixed_magnitudes">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_magnitude_1_"
+                android:textColor="@color/gray"
+                android:id="@+id/first_measured_magnitude_1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_magnitude_2_"
+                android:textColor="@color/gray"
+                android:id="@+id/first_measured_magnitude_2"/>
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/first_insert_fixed_samples"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:id="@+id/first_next_step"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

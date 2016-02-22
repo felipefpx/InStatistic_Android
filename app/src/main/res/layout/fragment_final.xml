@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.bitmine.sttool.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/final_correlation_coefficient"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/final_correlation_tv"
+            android:layout_marginTop="4dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/final_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:id="@+id/final_xlabel"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/final_ylabel"
+                android:textSize="12sp"
+                android:rotation="-90"
+                android:layout_marginLeft="-18dp"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/final_abstract"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/final_log"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/final_log"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/final_new"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@+id/final_new"/>
+
+    </LinearLayout>
+
+</ScrollView>
